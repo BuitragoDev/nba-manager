@@ -1,0 +1,20 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/_Project/UI/Screens/MainMenu/MainMenu.uss?fileID=7433441132597879392&amp;guid=051bb03cef8cab5468b1ed949965f53a&amp;type=3#MainMenu"/>
+    <ui:VisualElement name="root" class="screen-root">
+        <ui:VisualElement name="background" class="main-menu__background">
+            <ui:VisualElement name="center-col" class="main-menu__center">
+                <ui:VisualElement name="logo-block" class="main-menu__logo-block">
+                    <ui:Label name="title" text="NBA MANAGER" class="main-menu__title"/>
+                    <ui:Label name="subtitle" text="GENERAL MANAGER SIMULATION" class="main-menu__subtitle"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="separator" class="main-menu__separator"/>
+                <ui:VisualElement name="buttons" class="main-menu__buttons">
+                    <ui:Button name="btn-new-game" text="NUEVA PARTIDA" class="btn-primary btn--wide"/>
+                    <ui:Button name="btn-load-game" text="CARGAR PARTIDA" class="btn-secondary btn--wide"/>
+                    <ui:Button name="btn-quit" text="SALIR" class="btn-danger btn--wide"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:Label name="version-label" text="v0.1.0 — Early Development" class="main-menu__version"/>
+    </ui:VisualElement>
+</ui:UXML>

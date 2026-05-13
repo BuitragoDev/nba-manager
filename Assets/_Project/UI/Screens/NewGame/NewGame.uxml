@@ -1,0 +1,38 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/_Project/UI/Screens/NewGame/NewGame.uss?fileID=7433441132597879392&amp;guid=ab4f149d08d07cc1e832bb7a9adfff88&amp;type=3#NewGame"/>
+    <ui:VisualElement name="root" class="screen-root">
+        <ui:VisualElement name="header" class="ng-header">
+            <ui:Button name="btn-back" text="← VOLVER" class="btn-secondary"/>
+            <ui:Label name="header-title" text="SELECCIONA TU FRANQUICIA" class="ng-header__title"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="body" class="ng-body">
+            <ui:ScrollView name="team-list-scroll" class="ng-left-panel">
+                <ui:VisualElement name="team-list-container" class="ng-team-list"/>
+            </ui:ScrollView>
+            <ui:VisualElement name="team-detail" class="ng-right-panel">
+                <ui:VisualElement name="color-swatch" class="ng-swatch"/>
+                <ui:Label name="team-name" text="—" class="ng-detail__name"/>
+                <ui:Label name="team-city" text="Selecciona un equipo" class="ng-detail__city"/>
+                <ui:VisualElement name="stats-grid" class="ng-stats-grid">
+                    <ui:VisualElement class="ng-stat-box">
+                        <ui:Label text="CONFERENCIA" class="ng-stat-box__label"/>
+                        <ui:Label name="stat-conference" text="—" class="ng-stat-box__value"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="ng-stat-box">
+                        <ui:Label text="DIVISIÓN" class="ng-stat-box__label"/>
+                        <ui:Label name="stat-division" text="—" class="ng-stat-box__value"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="ng-stat-box">
+                        <ui:Label text="PRESTIGIO" class="ng-stat-box__label"/>
+                        <ui:Label name="stat-prestige" text="—" class="ng-stat-box__value"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="ng-stat-box">
+                        <ui:Label text="FILOSOFÍA IA" class="ng-stat-box__label"/>
+                        <ui:Label name="stat-philosophy" text="—" class="ng-stat-box__value"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:Button name="btn-start" text="COMENZAR TEMPORADA 2025-26 →" class="btn-primary ng-btn-start"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

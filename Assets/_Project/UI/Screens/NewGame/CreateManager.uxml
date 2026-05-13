@@ -1,0 +1,44 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/_Project/UI/Screens/NewGame/CreateManager.uss?fileID=7433441132597879392&amp;guid=b9b240a4de7601215ae2595bc2858c85&amp;type=3#CreateManager"/>
+    <ui:VisualElement name="root" class="screen-root">
+        <ui:VisualElement name="header" class="ng-header">
+            <ui:Button name="btn-back" text="← VOLVER" class="btn-secondary"/>
+            <ui:Label text="CREA TU MANAGER" class="ng-header__title"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="body" class="cm-body">
+            <ui:VisualElement name="form-card" class="cm-card">
+                <ui:Label text="INFORMACIÓN PERSONAL" class="cm-section-title"/>
+                <ui:VisualElement class="cm-row">
+                    <ui:VisualElement class="cm-field">
+                        <ui:Label text="NOMBRE" class="cm-field__label"/>
+                        <ui:TextField name="input-firstname" class="cm-field__input"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="cm-field">
+                        <ui:Label text="APELLIDO" class="cm-field__label"/>
+                        <ui:TextField name="input-lastname" class="cm-field__input"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="cm-row">
+                    <ui:VisualElement class="cm-field">
+                        <ui:Label text="NACIONALIDAD" class="cm-field__label"/>
+                        <ui:TextField name="input-nationality" value="USA" class="cm-field__input"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="cm-field">
+                        <ui:Label text="FECHA DE NACIMIENTO" class="cm-field__label"/>
+                        <ui:TextField name="input-birthdate" value="1980-01-01" class="cm-field__input"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:Label text="ESTILO DE GESTIÓN" class="cm-section-title" style="margin-top: 32px;"/>
+                <ui:VisualElement name="style-selector" class="cm-style-grid">
+                    <ui:Button name="style-balanced" text="⚖  EQUILIBRADO" class="cm-style-btn cm-style-btn--active"/>
+                    <ui:Button name="style-offensive" text="⚡  OFENSIVO" class="cm-style-btn"/>
+                    <ui:Button name="style-defensive" text="🛡  DEFENSIVO" class="cm-style-btn"/>
+                    <ui:Button name="style-analytics" text="📊  ANALÍTICO" class="cm-style-btn"/>
+                </ui:VisualElement>
+                <ui:Label name="style-description" text="Prioriza el equilibrio entre ataque y defensa. Rotaciones amplias y gestión conservadora del cap." class="cm-style-desc"/>
+                <ui:Label name="error-label" text="" class="cm-error"/>
+                <ui:Button name="btn-confirm" text="COMENZAR TEMPORADA 2025-26 →" class="btn-primary cm-btn-confirm"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

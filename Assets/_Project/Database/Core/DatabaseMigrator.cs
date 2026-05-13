@@ -156,6 +156,17 @@ namespace NBAManager.Database
                         FOREIGN KEY (TeamId) REFERENCES Teams(Id)
                     )");
 
+                // ── UserManager ───────────────────────────────────────────
+                db.Execute(@"
+                    CREATE TABLE IF NOT EXISTS UserManager (
+                        Id              INTEGER PRIMARY KEY CHECK (Id = 1),
+                        FirstName       TEXT    NOT NULL,
+                        LastName        TEXT    NOT NULL,
+                        Nationality     TEXT    NOT NULL DEFAULT 'USA',
+                        BirthDate       TEXT    NOT NULL DEFAULT '1980-01-01',
+                        FavoriteStyle   TEXT    NOT NULL DEFAULT 'Balanced'
+                    )");
+
                 SetSchemaVersion(db, 1);
             });
 

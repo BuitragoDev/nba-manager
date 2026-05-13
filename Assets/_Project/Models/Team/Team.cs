@@ -4,6 +4,8 @@ namespace NBAManager.Models
     /// Representa una franquicia NBA.
     /// Mapeado directamente a la tabla Teams en SQLite.
     /// </summary>
+    /// 
+    [SQLite.Table("Teams")]
     public class Team
     {
         [SQLite.PrimaryKey, SQLite.AutoIncrement]

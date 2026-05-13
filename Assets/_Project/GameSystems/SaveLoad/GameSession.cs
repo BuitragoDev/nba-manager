@@ -31,7 +31,6 @@ namespace NBAManager.SaveLoad
 
             if (File.Exists(dbPath))
             {
-                // Si ya existe, añadir timestamp para evitar colisión
                 string stamp = DateTime.Now.ToString("yyyyMMdd_HHmmss");
                 fileName = $"{SanitizeFileName(saveName)}_{stamp}.db";
                 dbPath   = Path.Combine(SavesDirectory, fileName);
@@ -40,6 +39,7 @@ namespace NBAManager.SaveLoad
             var db = DatabaseManager.Open(dbPath);
             DatabaseMigrator.ApplyMigrations(db);
             WriteSaveMeta(db, saveName, userTeamId);
+            LeagueSeeder.Seed(db);              // ← añadir esta línea
 
             Debug.Log($"[GameSession] Nueva partida creada: {dbPath}");
         }

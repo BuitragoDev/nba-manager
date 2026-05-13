@@ -1,0 +1,204 @@
+.screen-root {
+    flex-grow: 1;
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+    flex-direction: column;
+}
+
+/* ── Header ────────────────────────────────────────────── */
+.ng-header {
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(40, 46, 68);
+    background-color: rgb(10, 12, 18);
+}
+
+.ng-header__title {
+    font-size: 18px;
+    color: rgb(230, 230, 240);
+    -unity-font-style: bold;
+    letter-spacing: 2px;
+    margin-left: 24px;
+}
+
+/* ── Body ───────────────────────────────────────────────── */
+.ng-body {
+    flex-grow: 1;
+    flex-direction: row;
+    background-color: rgb(10, 12, 18);
+}
+
+/* ── Panel izquierdo ────────────────────────────────────── */
+.ng-left-panel {
+    width: 280px;
+    border-right-width: 1px;
+    border-right-color: rgb(40, 46, 68);
+    background-color: rgb(13, 16, 24);
+}
+
+.ng-team-list {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+/* ── Panel derecho ──────────────────────────────────────── */
+.ng-right-panel {
+    flex-grow: 1;
+    padding: 48px 64px;
+    align-items: flex-start;
+}
+
+.ng-swatch {
+    width: 52px;
+    height: 52px;
+    border-top-left-radius: 26px;
+    border-top-right-radius: 26px;
+    border-bottom-left-radius: 26px;
+    border-bottom-right-radius: 26px;
+    background-color: rgb(40, 46, 68);
+    margin-bottom: 20px;
+}
+
+.ng-detail__name {
+    font-size: 40px;
+    color: rgb(255, 165, 0);
+    -unity-font-style: bold;
+    margin-bottom: 4px;
+}
+
+.ng-detail__city {
+    font-size: 15px;
+    color: rgb(140, 145, 165);
+    margin-bottom: 32px;
+}
+
+/* ── Stats grid ─────────────────────────────────────────── */
+.ng-stats-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.ng-stat-box {
+    background-color: rgb(18, 22, 32);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    padding: 12px 20px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    min-width: 130px;
+}
+
+.ng-stat-box__label {
+    font-size: 10px;
+    color: rgb(140, 145, 165);
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+
+.ng-stat-box__value {
+    font-size: 15px;
+    color: rgb(230, 230, 240);
+    -unity-font-style: bold;
+}
+
+/* ── Botón inicio ───────────────────────────────────────── */
+.ng-btn-start {
+    padding: 14px 40px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    -unity-font-style: bold;
+}
+
+/* ── Botones globales ───────────────────────────────────── */
+.btn-primary {
+    background-color: rgb(255, 165, 0);
+    color: rgb(10, 12, 18);
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.btn-primary:hover {
+    background-color: rgb(255, 190, 40);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: rgb(230, 230, 240);
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-color: rgb(40, 46, 68);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.btn-secondary:hover {
+    border-color: rgb(255, 165, 0);
+    color: rgb(255, 165, 0);
+}
+
+/* ── Filas de equipo (generadas por código) ─────────────── */
+.ng-team-row {
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 16px;
+    background-color: rgba(0,0,0,0);
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-bottom: 0;
+}
+
+.ng-team-row:hover {
+    background-color: rgb(18, 22, 32);
+}
+
+.ng-team-dot {
+    width: 8px;
+    height: 8px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    margin-right: 12px;
+}
+
+.ng-team-abbr {
+    font-size: 12px;
+    color: rgb(140, 145, 165);
+    -unity-font-style: bold;
+    width: 36px;
+}
+
+.ng-team-name {
+    font-size: 13px;
+    color: rgb(210, 210, 225);
+    flex-grow: 1;
+}
+
+.ng-conference-header {
+    font-size: 10px;
+    color: rgb(255, 165, 0);
+    -unity-font-style: bold;
+    letter-spacing: 2px;
+    padding: 12px 16px 6px 16px;
+}

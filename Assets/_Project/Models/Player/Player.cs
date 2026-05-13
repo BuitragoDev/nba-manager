@@ -4,6 +4,8 @@ namespace NBAManager.Models
     /// Jugador NBA con todos los atributos definidos en el GDD sección 6.
     /// Mapeado directamente a la tabla Players en SQLite.
     /// </summary>
+    /// 
+    [SQLite.Table("Players")]
     public class Player
     {
         [SQLite.PrimaryKey, SQLite.AutoIncrement]
@@ -11,8 +13,8 @@ namespace NBAManager.Models
         public string FirstName     { get; set; }
         public string LastName      { get; set; }
         public int    Age           { get; set; }
-        public string Position      { get; set; }  // PG, SG, SF, PF, C
-        public string Nationality   { get; set; }
+        public string Nationality  { get; set; } = "USA";
+        public string Position     { get; set; } = "SG";
         public int    JerseyNumber  { get; set; }
         public int    TeamId        { get; set; }  // FK → Teams.Id (0 = free agent)
         public int    YearsInLeague { get; set; }
@@ -71,6 +73,6 @@ namespace NBAManager.Models
         public int    Morale        { get; set; }  // 0-100
         public int    Form          { get; set; }  // -3 a +3
         public int    InjuryStatus  { get; set; }  // 0 = sano, >0 = días lesionado
-        public string InjuryType    { get; set; }  // null si sano
+        public string InjuryType   { get; set; } = null;  // null si sano
     }
 }
